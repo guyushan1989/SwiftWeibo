@@ -14,7 +14,7 @@
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" customClass="Home">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="-634" y="821"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="XkZ-xa-OKT">
             <objects>
-                <viewController id="Dsj-cK-Ldy" sceneMemberID="viewController">
+                <viewController id="Dsj-cK-Ldy" customClass="UITabBarController" customModule="SwiftWeibo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="tt9-TX-2wM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7g-Cq-hdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
