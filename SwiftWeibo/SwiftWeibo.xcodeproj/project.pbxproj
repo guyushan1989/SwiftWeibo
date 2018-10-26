@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E99B8CC52182FCF600B8792E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F6ACE12182B15F002EA10F /* Assets.xcassets */; };
+		E9A10C0F21830CC00020ACBA /* TabBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A10C0E21830CC00020ACBA /* TabBarNavigationController.swift */; };
 		E9F6ACD92182B15F002EA10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6ACD82182B15F002EA10F /* AppDelegate.swift */; };
 		E9F6ACE02182B15F002EA10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F6ACDE2182B15F002EA10F /* Main.storyboard */; };
 		E9F6ACE52182B15F002EA10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F6ACE32182B15F002EA10F /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9A10C0E21830CC00020ACBA /* TabBarNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarNavigationController.swift; sourceTree = "<group>"; };
 		E9F6ACD52182B15F002EA10F /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F6ACD82182B15F002EA10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F6ACDF2182B15F002EA10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F6ACF02182BD52002EA10F /* MainViewController.swift */,
+				E9A10C0E21830CC00020ACBA /* TabBarNavigationController.swift */,
 				E9F6ACF22182BE23002EA10F /* HomeViewController.swift */,
 				E9F6ACF42182BE3B002EA10F /* MessageViewController.swift */,
 				E9F6ACF62182BE59002EA10F /* DiscoverViewController.swift */,
@@ -185,6 +188,7 @@
 				E9F6ACF12182BD52002EA10F /* MainViewController.swift in Sources */,
 				E9F6ACF52182BE3B002EA10F /* MessageViewController.swift in Sources */,
 				E9F6ACF32182BE23002EA10F /* HomeViewController.swift in Sources */,
+				E9A10C0F21830CC00020ACBA /* TabBarNavigationController.swift in Sources */,
 				E9F6ACF72182BE59002EA10F /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

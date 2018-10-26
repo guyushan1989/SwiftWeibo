@@ -41,11 +41,32 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="首页" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="首页" id="9ZV-cd-ZAH">
+                        <barButtonItem key="leftBarButtonItem" title="好友" id="FT2-vH-5HU">
+                            <connections>
+                                <segue destination="3Wc-2y-A3V" kind="show" id="sU6-yo-QFK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-968"/>
+            <point key="canvasLocation" x="986" y="-995"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zYk-gB-YV4">
+            <objects>
+                <viewController id="3Wc-2y-A3V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="utc-yZ-XSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="H70-G5-Jmm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0f-DX-9Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618" y="-996"/>
         </scene>
         <!--消息-->
         <scene sceneID="wg7-f3-ORb">
@@ -78,11 +99,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" title="消息" id="JtK-M2-epY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-274"/>
+            <point key="canvasLocation" x="1009" y="-278"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -96,18 +117,18 @@
                     </tabBar>
                     <connections>
                         <outlet property="myTabBar" destination="W28-zg-YXA" id="Whh-6I-CBJ"/>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Dsj-cK-Ldy" kind="relationship" relationship="viewControllers" id="4aP-9O-g2R"/>
-                        <segue destination="dMy-Hw-7ru" kind="relationship" relationship="viewControllers" id="yos-Eh-ZOx"/>
-                        <segue destination="rkF-pl-2Um" kind="relationship" relationship="viewControllers" id="lUi-LN-JA8"/>
+                        <segue destination="ABY-ZB-hPM" kind="relationship" relationship="viewControllers" id="3pp-xa-Ozb"/>
+                        <segue destination="oeT-JE-gcq" kind="relationship" relationship="viewControllers" id="LoA-5B-97L"/>
+                        <segue destination="Dsj-cK-Ldy" kind="relationship" relationship="viewControllers" id="zLM-Qv-ZSx"/>
+                        <segue destination="tbW-Az-dv4" kind="relationship" relationship="viewControllers" id="hCJ-A8-Yfk"/>
+                        <segue destination="xac-CI-4Sm" kind="relationship" relationship="viewControllers" id="CGy-BM-cyN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-634" y="-27"/>
         </scene>
-        <!--发现-->
+        <!--搜索-->
         <scene sceneID="XYn-Y0-xiw">
             <objects>
                 <viewController id="dMy-Hw-7ru" customClass="DiscoverViewController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,11 +138,11 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="XMB-P9-nQE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="发现" id="Ou2-gh-bCY"/>
+                    <navigationItem key="navigationItem" title="搜索" id="JSc-gd-leS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxl-kD-WyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="418"/>
+            <point key="canvasLocation" x="1064" y="456"/>
         </scene>
         <!--我-->
         <scene sceneID="j4n-PK-Il7">
@@ -133,11 +154,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="hZo-55-WF1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" id="MpZ-g2-8xi"/>
+                    <navigationItem key="navigationItem" title="我" id="Cj1-Lj-DSb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXf-kg-0WB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-634" y="821"/>
+            <point key="canvasLocation" x="-979" y="1687"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XkZ-xa-OKT">
@@ -147,11 +168,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7g-Cq-hdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="821"/>
+            <point key="canvasLocation" x="-234" y="840"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="rXx-IB-bCP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ABY-ZB-hPM" customClass="TabBarNavigationController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="Dsa-x3-egh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fOH-QX-thu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Fwz-ZV-mUn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDc-Wf-JCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-995"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="Cs6-Z5-99F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oeT-JE-gcq" customClass="TabBarNavigationController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" id="kh8-hp-UEn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lJF-CY-PGH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="cOu-DN-DfD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPo-NN-PJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="-277"/>
+        </scene>
+        <!--搜索-->
+        <scene sceneID="FOt-Z8-gGH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tbW-Az-dv4" customClass="TabBarNavigationController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="搜索" id="CWT-qk-3GR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OxK-fs-EJv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dMy-Hw-7ru" kind="relationship" relationship="rootViewController" id="XyM-C0-mQ0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbB-p0-yRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="456"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="JTJ-3d-5xa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xac-CI-4Sm" customClass="TabBarNavigationController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" id="M2r-fg-SSA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ht2-gU-Dt2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rkF-pl-2Um" kind="relationship" relationship="rootViewController" id="I2p-79-w6W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqX-dd-XHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-978" y="840"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-    </resources>
 </document>
